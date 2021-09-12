@@ -52,17 +52,21 @@ input[type="checkbox"]{
     -webkit-appearance: none;
     outline: none;
     background: hsl(230, 22%, 74%);
-    transition: ease-in-out 0.2s;
+    transition: ease 0.2s;
+}
+
+input[type="checkbox"]:hover{
+    background: hsl(210, 78%, 56%);
 }
 
 input:checked[type="checkbox"]{
-    background: linear-gradient(hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+    background: linear-gradient(to left,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
 }
 
 input[type="checkbox"]::before{
     content: '';
     position: absolute;
-    top: 4px;
+    top: 5px;
     left: 4px;
     width: 20px;
     height: 20px;
@@ -99,6 +103,11 @@ section{
     min-height: 250px;
     background: hsl(227, 47%, 96%);
     border-radius: 5px;
+}
+
+.socialMedia:hover{
+    cursor: pointer;
+    background: hsl(227, 47%, 93%);
 }
 
 .facebook::before{
@@ -196,6 +205,11 @@ section{
     min-height: 130px;
     background: hsl(227, 47%, 96%);
     border-radius: 5px;
+}
+
+.stat:hover{
+    cursor: pointer;
+    background: hsl(227, 47%, 93%);
 }
 
 .pageViews{
