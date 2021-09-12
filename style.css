@@ -177,6 +177,102 @@ section{
     align-items: center;
 }
 
+/* Overview portion of the page */
+.overview h1{
+    color: hsl(228, 12%, 44%);
+    margin-bottom: 20px;
+}
+
+.stat{
+    position: relative;
+    color: hsl(228, 12%, 44%);
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 350px;
+    min-height: 130px;
+    background: hsl(227, 47%, 96%);
+    border-radius: 5px;
+}
+
+.pageViews{
+    display: flex;
+    padding: 0 60px 0 40px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.percentage .number{
+    padding-left: 30px;
+    color: hsl(230, 17%, 14%);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.percentage{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span.positive{
+    display: flex;
+    justify-content: flex-start;
+    color: hsl(163, 72%, 41%);
+    font-size: 12px;
+}
+
+span.negative{
+    min-width: 80px;
+    color:hsl(356, 69%, 56%);
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 @media (min-width:768px){
-    
+    section{
+        padding: 0;
+    }
+
+    .container{
+        padding: 20px;
+    }
+
+    .followers{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .socialMedia{
+        min-width: 300px;
+    }
+
+    .socialMedia::before{
+        width: 298px;
+    }
+
+    .overview{
+        width: 100%;
+    }
+
+    .overviewToday{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .stat{
+        min-width: 300px;
+    }
+
 }
