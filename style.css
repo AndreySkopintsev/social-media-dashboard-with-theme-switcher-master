@@ -263,6 +263,10 @@ span.negative{
     background: hsl(228, 28%, 20%);
 }
 
+.darkMode .socialMedia:hover,.darkMode .stat:hover{
+    background: hsl(228, 28%, 30%);
+}
+
 .darkMode .number{
     color: hsl(0, 0%, 100%);
 }
