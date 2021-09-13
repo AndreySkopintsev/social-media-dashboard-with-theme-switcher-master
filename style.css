@@ -36,7 +36,7 @@ header h1{
     border-bottom: 1px solid hsl(228, 12%, 44%);
 }
 
-.darkMode{
+.darkModeBox{
     padding-top: 15px;
     display: flex;
     justify-content: space-between;
@@ -249,6 +249,36 @@ span.negative{
     align-items: center;
 }
 
+/* Dark mode styling */
+.darkMode{
+    color: hsl(0, 0%, 100%);
+    background: hsl(230, 17%, 14%);
+}
+
+.darkMode *{
+    color: hsl(228, 34%, 66%);
+}
+
+.darkMode .socialMedia,.darkMode .stat{
+    background: hsl(228, 28%, 20%);
+}
+
+.darkMode .number{
+    color: hsl(0, 0%, 100%);
+}
+
+.darkMode .number span{
+    color: hsl(0, 0%, 100%);
+}
+
+.darkMode header,.darkMode section{
+    background: hsl(230, 17%, 14%);
+}
+
+.darkMode h1{
+    color: hsl(0, 0%, 100%);
+}
+
 @media (min-width:768px){
     section{
         padding: 0;
@@ -289,4 +319,18 @@ span.negative{
         min-width: 300px;
     }
 
+    header{
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .nameContainer{
+        border-bottom: none;
+    }
+
+    .darkModeBox{
+        width: 150px;
+    }
+    
 }
